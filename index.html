@@ -3,399 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Adane Firde — Photographer, Addis Ababa</title>
-<meta name="description" content="Adane Firde photographs people, documentary stories and brand spaces from Addis Ababa, Ethiopia.">
+<title>Adane Firde — Communication strategy & creative direction</title>
+<meta name="description" content="Communication strategy and creative direction for busy brands in Addis Ababa and beyond. Published prices, a 90-minute Strategy Session to start.">
+<meta property="og:title" content="Adane Firde — Communication strategy & creative direction">
+<meta property="og:description" content="Communication strategy and creative direction for busy brands in Addis Ababa and beyond. Published prices, a 90-minute Strategy Session to start.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#14213D">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#ECECE9; --surface:#E1E1DD; --ink:#0E0E0E; --muted:#55524C;
-  --accent:#0E0E0E; --accent-ink:#ECECE9; --field:#0E0E0E; --field-ink:#ECECE9;
-  --s1:#E1E1DD; --s2:#D8D8D4; --s3:#CFCFCB; --s4:#E6E6E2;
-  --small:1rem;
-  --body:clamp(1.0625rem,1rem + .25vw,1.1875rem);
-  --lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);
-  --head:clamp(1.5rem,1.2rem + 1vw,1.75rem);
-  --m:20px; --ease:cubic-bezier(.2,.7,.1,1);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:var(--body);line-height:1.45;letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
-img{display:block;width:100%;height:100%;object-fit:cover}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-::selection{background:var(--accent);color:#fff}
-.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:var(--small);transition:transform .2s var(--ease),background .2s}
-.btn:hover{background:#3a3835}.btn:active{transform:scale(.97)}
-
-/* HERO: the contact sheet */
-.sheet{position:relative;height:100svh;min-height:720px;overflow:hidden;padding:0 12px}
-.cols{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;height:100%}
-.col{display:flex;flex-direction:column;gap:12px}
-.col.wide{grid-column:span 2}
-.col:nth-child(1){margin-top:0}.col:nth-child(2){margin-top:-90px}.col:nth-child(3){margin-top:-40px}
-.col:nth-child(4){margin-top:-130px}.col:nth-child(5){margin-top:-20px}
-.frame{flex:none;display:flex;flex-direction:column;cursor:pointer;transition:opacity .3s var(--ease)}
-.frame .pic{overflow:hidden;background:var(--surface)}
-.frame .pic img{transition:transform .6s var(--ease),filter .6s;filter:grayscale(1)}
-.frame:hover .pic img{filter:grayscale(0)}
-.frame:hover .pic img{transform:scale(1.04)}
-.frame .strip{height:32px;display:flex;align-items:center;padding:0 10px;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
-.frame.nostrip .strip{display:none}
-.dim .frame{opacity:.22}.dim .frame.on{opacity:1}
-.panel{flex:none;min-height:470px;background:var(--ink);color:var(--bg);padding:24px;display:flex;flex-direction:column}
-.panel h1{font-family:"Instrument Serif",serif;font-size:clamp(3.5rem,5.6vw,5.75rem);font-weight:400;letter-spacing:-.02em;line-height:.9}
-.panel p{font-size:20px;line-height:1.35;margin-top:14px;max-width:30ch}
-.panel .btn{margin-top:22px;align-self:flex-start;background:var(--bg);color:var(--ink)}
-.panel .btn:hover{background:#fff}
-.filters{margin-top:auto;display:flex;gap:18px;flex-wrap:wrap}
-.filters button{background:none;border:0;color:inherit;font:inherit;font-size:var(--small);cursor:pointer;padding:6px 0;opacity:.7;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;transition:opacity .2s}
-.filters button:hover,.filters button[aria-pressed=true]{opacity:1;text-decoration-thickness:2px}
-
-/* sections */
-section{padding:180px var(--m) 0}
-h2{font-family:"Instrument Serif",serif;font-size:clamp(2.25rem,1.6rem + 1.6vw,3rem);font-weight:400;letter-spacing:-.02em;line-height:1.15;margin-bottom:32px}
-.soft{color:var(--muted)}
-.tab{font-variant-numeric:tabular-nums}
-
-/* work ledger */
-.work{position:relative}
-.ledger{margin-left:14vw;width:560px;max-width:100%}
-.ledger ul{list-style:none}
-.ledger li{display:grid;grid-template-columns:55% 1fr auto;align-items:center;min-height:44px;cursor:default;transition:color .2s}
-.ledger li .kind{font-size:16px;color:var(--muted)}
-.ledger .year-gap{height:28px}
-.ledger:hover li,.ledger:focus-within li{color:var(--muted)}
-.ledger li:hover,.ledger li:focus{color:var(--ink)}
-.ledger li:focus{outline:none}.ledger li:focus-visible{outline:3px solid var(--accent)}
-.preview{position:absolute;width:min(34vw,520px);aspect-ratio:4/3;left:calc(14vw + 560px + 64px);top:0;opacity:1;transition:opacity .15s,top .25s var(--ease);pointer-events:none}
-.preview img{transition:opacity .15s}
-.ledger .mpic{display:none}
-
-/* about */
-.about{background:var(--surface);margin-top:180px;padding-top:140px;padding-bottom:140px}
-.about .row{display:grid;grid-template-columns:34vw 1fr}
-.facts{display:flex;flex-direction:column;gap:20px;font-size:16px;width:220px}
-.facts dt{color:var(--muted)}
-.about p.big{font-size:clamp(1.25rem,1.7vw,1.625rem);line-height:1.35;max-width:56vw}
-.about p.big + p.big{margin-top:1em}
-.about .row2{margin-top:120px}
-.about .label{font-size:var(--small)}
-.lists{display:grid;grid-template-columns:260px 260px;gap:64px}
-.lists ul{list-style:none;font-size:16px}
-.lists li{display:flex;justify-content:space-between;gap:16px;padding:5px 0}
-
-/* rates list */
-.rates-wrap{display:grid;grid-template-columns:14vw 560px 1fr;column-gap:64px;align-items:start}
-.rates{grid-column:2;width:560px;max-width:100%}
-.rates-pic{grid-column:3;aspect-ratio:4/5;max-width:440px;margin-top:60px}
-.rates ul{list-style:none}
-.rates li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;min-height:38px;padding:6px 0}
-.rates .dot{display:inline-block;width:16px;height:16px;border-radius:50%;margin-right:10px;vertical-align:-2px}
-.rates .val{font-size:16px;color:var(--muted);white-space:nowrap}
-.rates .grp{color:var(--muted);margin-top:40px;font-size:var(--body)}
-.rates .grp:first-of-type{margin-top:0}
-.rates .note{font-size:var(--small);color:var(--muted);margin-top:28px;max-width:46ch}
-
-/* contact */
-.contact{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;padding-top:180px;padding-bottom:120px;align-items:start}
-.contact p.say{grid-column:1/6;font-family:"Instrument Serif",serif;font-size:clamp(1.75rem,2.6vw,2.25rem);line-height:1.1}
-.contact .portrait{grid-column:8/10;width:160px;aspect-ratio:1}
-.contact .reach{grid-column:10/13}
-.contact h2{font-size:18px;margin-bottom:20px}
-.contact .reach a{display:block;font-size:18px;text-underline-offset:4px;padding:3px 0}
-.contact .reach a:hover{color:var(--accent)}
-.contact .reach .city{font-size:var(--small);color:var(--muted);margin-top:14px}
-
-/* footer tiles */
-footer{padding:0 10px 10px;display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
-.tile{background:var(--surface);padding:22px;min-height:220px;display:flex;flex-direction:column}
-.t-state{grid-column:1/5}.t-nav{grid-column:5/8}.t-time{grid-column:8/10}.t-mail{grid-column:10/13}
-.t-state p{font-family:"Instrument Serif",serif;font-size:32px;line-height:1.2;letter-spacing:-.02em;max-width:22ch}
-.t-state small{margin-top:auto;font-size:var(--small);color:var(--muted)}
-.t-nav ul{list-style:none}.t-nav a{text-decoration:none;display:inline-block;padding:3px 0}.t-nav a:hover{text-decoration:underline}
-.t-time{font-size:var(--small)}.t-time strong{display:block;font-size:var(--lead);font-weight:500;margin-top:6px}
-.t-mail a{margin-top:auto;font-size:20px}
-.t-word{grid-column:1/9;background:var(--ink);color:var(--bg);min-height:320px;justify-content:center;align-items:center}
-.t-word span{font-family:"Instrument Serif",serif;font-size:10vw;letter-spacing:-.02em;line-height:.9;font-weight:400;white-space:nowrap}
-.t-go{grid-column:9/13;background:var(--field);color:var(--field-ink);min-height:320px;text-decoration:none;transition:background .2s}
-.t-go:hover{background:#2a2826}
-.t-go span{font-family:"Instrument Serif",serif;font-size:40px;line-height:1.1;letter-spacing:-.02em;max-width:10ch}
-.t-go svg{margin-top:auto;align-self:flex-end;width:64px;height:64px;transition:transform .3s var(--ease)}
-.t-go:hover svg{transform:translate(6px,-6px)}
-.credit{grid-column:1/-1;font-size:var(--small);color:var(--muted);padding:10px 14px 4px}
-
-/* motion */
-.rise{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-.rise.in{opacity:1;transform:none}
-.no-js .rise{opacity:1;transform:none}
-.shutter .pic{clip-path:inset(0 0 100% 0);animation:shut 1.1s var(--ease) .2s forwards}
-.shutter .pic img{animation:settle 1.4s var(--ease) .2s both}
-@keyframes shut{to{clip-path:inset(0 0 0 0)}}
-@keyframes settle{from{transform:scale(1.12)}to{transform:scale(1)}}
-.drift img{animation:drift 18s ease-in-out infinite alternate}
-@keyframes drift{from{transform:scale(1)}to{transform:scale(1.08)}}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  .rise{opacity:1;transform:none}.shutter .pic{clip-path:none}
-}
-
-/* tablet & phone */
-@media (max-width:1100px){
-  .cols{grid-template-columns:repeat(4,1fr)}
-  .col.c6,.col.c5{display:none}
-  .contact p.say{grid-column:1/7}.contact .portrait{grid-column:7/9;width:120px}.contact .reach{grid-column:9/13;min-width:0}.contact .reach a{overflow-wrap:anywhere}
-  .t-state p{font-size:24px}
-  .ledger{margin-left:0}.rates-wrap{grid-template-columns:1fr 1fr;column-gap:32px}.rates{grid-column:1;width:auto}.rates-pic{grid-column:2}
-  .t-mail a{font-size:16px;word-break:break-all}
-  .preview{left:auto;right:var(--m)}
-  .about .row{grid-template-columns:200px 1fr}.about p.big{max-width:none}
-  .lists{grid-template-columns:1fr 1fr;gap:32px}
-}
-@media (max-width:760px){
-  :root{--m:20px}
-  .sheet{height:auto;min-height:0;padding:20px 20px 0}
-  .cols{display:block}
-  .panel{height:auto;min-height:40vh;margin-bottom:8px}
-  .panel h1{font-size:13vw}.panel p{font-size:17px}.panel .btn{align-self:stretch;justify-content:center}
-  .mobile-sheet{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;align-items:start;max-height:150vw;overflow:hidden}
-  .mobile-sheet .mcol{display:flex;flex-direction:column;gap:8px}.mobile-sheet .mcol:nth-child(2){margin-top:-60px}
-  .col:not(.wide){display:none!important}.col.wide{display:block!important;margin:0}.col.wide .frame{display:none}
-  section{padding-top:120px}
-  .ledger{width:auto}.ledger li{grid-template-columns:1fr auto;min-height:52px;padding:6px 0}
-  .ledger li>span:nth-last-child(3){grid-column:1;grid-row:2}.ledger li .kind{grid-column:1;grid-row:3}.ledger li .tab{grid-row:2;grid-column:2}
-  .ledger .mpic{display:block;grid-column:1/-1;grid-row:1;aspect-ratio:16/10;margin:16px 0 8px}
-  .preview{display:none}
-  .about .row{grid-template-columns:1fr}.about .row1{display:flex;flex-direction:column-reverse;gap:32px}
-  .facts{display:grid;grid-template-columns:1fr 1fr;width:auto;font-size:14px}
-  .about p.big{font-size:19px}
-  .lists{grid-template-columns:1fr;gap:40px}.about .label{margin-bottom:10px;color:var(--ink)}
-  .rates-wrap{display:block}.rates-pic{margin-top:40px;max-width:none;aspect-ratio:4/3}.rates li{min-height:44px}
-  .contact{display:grid;grid-template-columns:96px 1fr;gap:16px;padding-top:120px}
-  .contact p.say{grid-column:1/-1;font-size:24px}
-  .contact .portrait{grid-column:1;width:96px}.contact .reach{grid-column:2}
-  footer{grid-template-columns:1fr 1fr;gap:6px;padding:0 6px 6px}
-  .tile{min-height:160px;padding:20px}
-  .t-word{grid-column:1/-1;order:-3}.t-word span{font-size:16vw}
-  .t-go{grid-column:1/-1;order:-2;min-height:200px}
-  .t-nav,.t-mail,.t-time,.t-state{grid-column:auto}.t-nav{order:1}.t-mail{order:2}.t-time{order:3}.t-state{order:4}.credit{order:5}
-  .t-state p{font-size:18px}.t-mail a{font-size:16px;word-break:break-all}
-}
-.mobile-sheet{display:none}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="no-js">
-
-<main>
-<!-- HERO: the contact sheet. Photos come from the PHOTOS list in the script at the bottom. -->
-<header class="sheet" id="top">
-  <div class="cols" id="cols">
-    <div class="col c1"></div>
-    <div class="col c2"></div>
-    <div class="col wide c34">
-      <div class="panel">
-        <h1>Adane Firde</h1>
-        <p>Photographer in Addis Ababa. Portraits, documentary stories and the spaces brands live in.</p>
-        <a class="btn" href="#contact">Book a shoot</a>
-        <div class="filters" role="group" aria-label="Show work by kind">
-          <button type="button" data-cat="portrait" aria-pressed="false">Portraits</button>
-          <button type="button" data-cat="documentary" aria-pressed="false">Documentary</button>
-          <button type="button" data-cat="brand" aria-pressed="false">Brand &amp; spaces</button>
-        </div>
-      </div>
-    </div>
-    <div class="col c5"></div>
-    <div class="col c6"></div>
-  </div>
-  <div class="mobile-sheet" aria-hidden="true"><div class="mcol"></div><div class="mcol"></div></div>
-</header>
-
-<section class="work" id="work" aria-labelledby="work-h" style="padding-top:200px">
-  <div class="ledger rise">
-    <h2 id="work-h">Selected work</h2>
-    <ul id="ledger"></ul>
-  </div>
-  <div class="preview" id="preview" aria-hidden="true"><img alt="" id="preview-img"></div>
-</section>
-
-<section class="about" id="about" aria-labelledby="about-h">
-  <h2 id="about-h" class="rise">About</h2>
-  <div class="row row1 rise">
-    <dl class="facts">
-      <div><dt>Based in</dt><dd>Addis Ababa, Ethiopia</dd></div>
-      <div><dt>Works across</dt><dd>Ethiopia and East Africa</dd></div>
-      <div><dt>Also runs</dt><dd>Youthopians, a creative agency</dd></div>
-    </dl>
-    <div>
-      <p class="big">I photograph people as they are and places as they are used. My work moves between portraits for companies and individuals, documentary stories for development organisations, and photographs of the spaces where brands meet their people.</p>
-      <p class="big">Every shoot starts with three days of preparation, casting included, and ends with a finished, retouched set four days later.</p>
-    </div>
-  </div>
-  <div class="row row2 rise">
-    <p class="label">Clients</p>
-    <div class="lists">
-      <ul>
-        <li><span>IRC Ethiopia</span><span class="soft tab">2026</span></li>
-        <li><span>Bluespace Ethiopia</span><span class="soft tab">2026</span></li>
-        <li><span>Client name</span><span class="soft tab">2025</span></li>
-        <li><span>Client name</span><span class="soft tab">2025</span></li>
-      </ul>
-      <ul>
-        <li><span>Client name</span><span class="soft tab">2025</span></li>
-        <li><span>Client name</span><span class="soft tab">2024</span></li>
-        <li><span>Client name</span><span class="soft tab">2024</span></li>
-        <li><span>Client name</span><span class="soft tab">2024</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="rates-wrap" id="rates" aria-labelledby="rates-h">
-  <div class="rates rise">
-    <h2 id="rates-h">Rates and turnaround</h2>
-    <ul>
-      <li class="grp" aria-hidden="true">Shoots</li>
-      <li><span><span class="dot" style="background:#0E0E0E"></span>Half day, 50 finished images</span><span class="val tab">Br 50,000</span></li>
-      <li><span><span class="dot" style="background:#55524C"></span>Full day, 110 finished images</span><span class="val tab">Br 85,000</span></li>
-      <li><span><span class="dot" style="background:var(--s4)"></span>Each additional person on camera</span><span class="val tab">Br 5,000</span></li>
-      <li class="grp" aria-hidden="true">Timing</li>
-      <li><span><span class="dot" style="background:var(--s3)"></span>Pre-production and casting</span><span class="val tab">3 days</span></li>
-      <li><span><span class="dot" style="background:var(--s2)"></span>Editing and retouching</span><span class="val tab">4 days</span></li>
-    </ul>
-    <p class="note">Travel outside Addis Ababa is quoted per project. Documentary assignments for NGOs are priced to the brief.</p>
-  </div>
-  <figure class="rates-pic rise"><img src="photos/portrait-3.jpg" alt="On set during a portrait session" loading="lazy" width="880" height="1100"></figure>
-</section>
-
-<section class="contact" id="contact" aria-labelledby="contact-h">
-  <p class="say rise">Portraits, stories and spaces in Ethiopia. Tell me what you need photographed.</p>
-  <div class="portrait rise"><img id="portrait" alt="Portrait of Adane Firde" width="160" height="160" loading="lazy"></div>
-  <div class="reach rise">
-    <h2 id="contact-h">Planning a shoot?</h2>
-    <a href="mailto:hi@adanefirde.com?subject=Shoot%20enquiry">hi@adanefirde.com</a>
-    <a href="https://t.me/USERNAME">Telegram</a>
-    <a href="https://wa.me/2519XXXXXXXX">WhatsApp</a>
-    <a href="tel:+2519XXXXXXXX">+251 9XX XXX XXX</a>
-    <a href="https://instagram.com/adane.jpg">Instagram</a>
-    <p class="city">Addis Ababa. Replies within a day.</p>
-  </div>
-</section>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr"><div class="wrap">
+<a class="wm" href="./" aria-label="adane firde, home">adane firde<span class="pt">.</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><path d="M2 7 H20 M2 15 H14" stroke="#14213D" stroke-width="2.4" stroke-linecap="round"/><circle cx="19" cy="15" r="2" fill="#E0B03C"/></svg></button>
+<nav id="nav" class="nav" aria-label="Main"><a class="l" href="services/">Services</a><a class="l" href="#work">Work</a><a class="l" href="about/">About</a><a class="btn pri" href="book/">Book a session</a></nav>
+</div></header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-h"><div class="wrap">
+<div class="hero-g"><div class="hero-l">
+<p class="lab">Communication strategy &amp; creative direction · Addis Ababa</p>
+<h1 id="hero-h" class="h1">Get to the point<span class="pt">.</span></h1>
+<p class="lead">I help busy brands decide what to say, then build the system that keeps saying it. Strategy first, then the creative direction to carry it.</p>
+<div class="cta-row"><a class="btn pri lg" href="book/">Book a Strategy Session</a><a class="more" href="#work">See the work →</a></div>
+<p class="small">90 minutes · Br 20,000 · credited to your project</p>
+</div>
+<div class="hero-r"><div class="seal" role="img" aria-label="The af. seal"><span>af<span class="pt">.</span></span></div></div></div>
+<div class="pattern" aria-hidden="true"><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><b></b><i></i></div>
+<p class="lab" style="margin-top:64px">Clients include</p>
+<div class="clients"><span>Yango Ethiopia</span><span>Kuriftu Resorts</span><span>Mendspace</span><span>Ezih Bags</span><span>Magna Pastries</span><span>Reach for Change</span><span>IOM</span><span>Mastercard Foundation</span><span>UNFPA</span></div>
+</div></section>
+<section class="sec navy on-navy" aria-labelledby="prob-h"><div class="wrap">
+<div class="stack" style="max-width:760px;margin-bottom:56px"><p class="lab">The problem</p><h2 id="prob-h" class="h2">Busy is not clear<span class="pt">.</span></h2></div>
+<div class="grid3">
+<div class="rule"><h3 class="h3">Every channel says something different.</h3><p class="t">The website, the pitch deck and the Instagram grid describe three different companies.</p></div>
+<div class="rule"><h3 class="h3">Content gets made, decisions don’t.</h3><p class="t">The team is busy producing posts, but nobody has decided what the brand stands for.</p></div>
+<div class="rule"><h3 class="h3">Agencies change, the brief stays vague.</h3><p class="t">Each new partner starts from scratch, so the work never compounds.</p></div>
+</div></div></section>
+<section class="sec" aria-labelledby="off-h"><div class="wrap">
+<div class="head-row"><div class="stack"><p class="lab">Services and prices</p><h2 id="off-h" class="h2">Start small, or start properly<span class="pt">.</span></h2></div><p class="t" style="max-width:360px">Prices are in Birr and published, so you know before we talk.</p></div>
+<div class="session on-mus"><div class="in"><svg aria-hidden="true" width="64" height="64" viewBox="0 0 96 96"><path d="M20 22 H76 A8 8 0 0 1 84 30 V58 A8 8 0 0 1 76 66 H46 L30 80 V66 H20 A8 8 0 0 1 12 58 V30 A8 8 0 0 1 20 22 Z" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="48" cy="44" r="7" fill="#14213D"/></svg><div><p class="lab">00 · Begin here</p><h3 class="serif" style="font-size:40px">Strategy Session<span class="pt">.</span></h3><p>90 minutes · <b>Br 20,000</b> · Credited in full if you start a project within 30 days.</p></div></div><a class="btn dark lg" href="book/">Book a session</a></div>
+<div class="cards">
+<article class="card"><h3 class="serif" style="font-size:36px">Sharpen<span class="pt">.</span></h3><p class="t">For brands that exist but say too much, or too little.</p><div class="rows"><div><span class="n">Audit</span><span class="p">6 working days · <b>from Br 120,000</b></span></div><div><span class="n">Strategy</span><span class="p">2 weeks · <b>from Br 225,000</b></span></div><div><span class="n">Content &amp; Social System</span><span class="p">2 weeks · <b>from Br 190,000</b></span></div><div><span class="n">Communication Blueprint</span><span class="p">5–6 weeks · <b>from Br 465,000</b></span></div></div><a class="more" href="services/#sharpen">How it works →</a></article>
+<article class="card"><h3 class="serif" style="font-size:36px">Build<span class="pt">.</span></h3><p class="t">For new brands, or ones with nothing to build on.</p><div class="rows"><div><span class="n">Brand Starter</span><span class="p">3 weeks · <b>from Br 95,000</b></span></div><div><span class="n">Brand Foundation</span><span class="p">6–7 weeks · <b>from Br 720,000</b></span></div></div><a class="more" href="services/#build">How it works →</a></article>
+<article class="card dk on-navy"><h3 class="serif" style="font-size:36px">Retainer<span class="pt">.</span></h3><p class="t">For teams that want a strategist on call after the system is built.</p><p class="price">from Br 145,000 a month</p><p>2 advisory days a month. Two-month minimum.</p><a class="more" href="services/#retainer">How it works →</a></article>
+</div></div></section>
+<section class="sec paper" aria-labelledby="m-h"><div class="wrap">
+<div class="stack" style="margin-bottom:56px"><p class="lab">How I work</p><h2 id="m-h" class="h2">Four steps, one direction<span class="pt">.</span></h2></div>
+<ol class="steps">
+<li><svg aria-hidden="true" width="56" height="56" viewBox="0 0 96 96"><circle cx="42" cy="42" r="26" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M62 62 L84 84" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="42" cy="42" r="7" fill="#E0B03C"/></svg><p class="num">01</p><h3 class="serif" style="font-size:34px">Diagnose<span class="pt">.</span></h3><p class="t">Find what the brand says now, and what people hear.</p></li>
+<li><svg aria-hidden="true" width="56" height="56" viewBox="0 0 96 96"><path d="M14 36 H82" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 60 H56" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="60" r="7" fill="#E0B03C"/></svg><p class="num">02</p><h3 class="serif" style="font-size:34px">Define<span class="pt">.</span></h3><p class="t">Decide the one thing to say, and to whom.</p></li>
+<li><svg aria-hidden="true" width="56" height="56" viewBox="0 0 96 96"><path d="M14 35 H56" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="35" r="7" fill="#E0B03C"/><circle cx="20" cy="61" r="7" fill="#E0B03C"/><path d="M40 61 H82" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="num">03</p><h3 class="serif" style="font-size:34px">Systemise<span class="pt">.</span></h3><p class="t">Turn it into rules, templates and a content plan.</p></li>
+<li><svg aria-hidden="true" width="56" height="56" viewBox="0 0 96 96"><circle cx="18" cy="48" r="7" fill="#E0B03C"/><path d="M36 48 H80" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M64 32 L80 48 L64 64" fill="none" stroke="#14213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="num">04</p><h3 class="serif" style="font-size:34px">Direct<span class="pt">.</span></h3><p class="t">Guide the team and partners until it holds.</p></li>
+</ol></div></section>
+<section id="work" class="sec" aria-labelledby="w-h"><div class="wrap">
+<div class="head-row"><div class="stack"><p class="lab">Work</p><h2 id="w-h" class="h2">Brands I’ve helped get clear<span class="pt">.</span></h2></div></div>
+<div class="work"><article><div><p class="k">Commercial · six years</p><h3 class="h3">Yango Ethiopia</h3></div><p class="t">Six years of communication work.</p></article><article><div><p class="k">Hospitality</p><h3 class="h3">Kuriftu Resorts &amp; Spa</h3></div><p class="t">Social media strategy and brand guidelines.</p></article><article><div><p class="k">Pilates studio</p><h3 class="h3">Mendspace</h3></div><p class="t">Business development, communication guidelines, a social media guide and full communication support.</p></article><article><div><p class="k">Retail</p><h3 class="h3">Ezih Bags</h3></div><p class="t">A brand persona, social content and full communication support.</p></article><article><div><p class="k">Food</p><h3 class="h3">Magna Pastries</h3></div><p class="t">A social media visual guide and communication guides.</p></article><article><div><p class="k">Small business support</p><h3 class="h3">Reach for Change</h3></div><p class="t">Small business support.</p></article><article><div><p class="k">Impact work</p><h3 class="h3">IOM · Mastercard Foundation (EDGE) · UNFPA</h3></div><p class="t">Communication and media work for international development programmes.</p></article></div>
+</div></section>
+<section class="sec" style="padding-top:0" aria-labelledby="a-h"><div class="wrap">
+<div style="border-top:3px solid var(--navy);padding-top:72px;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-end;justify-content:space-between">
+<div class="stack" style="flex:999 1 560px"><p class="lab">About</p><h2 id="a-h" class="serif" style="font-size:clamp(34px,4.4vw,56px);line-height:1.08;letter-spacing:-.03em">I’m Adane. I help brands say less, and mean it<span class="pt">.</span></h2>
+<p class="t" style="max-width:660px">I co-founded Youthopians, a creative and consulting agency in Addis Ababa, and have worked with businesses, NGOs and institutions on what they say and how they show it. This practice is the strategy end of that work, one client at a time.</p></div>
+<a class="more" href="about/">More about me →</a></div></div></section>
+<section class="sec mus on-mus" aria-labelledby="b-h"><div class="wrap">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:40px">
+<div class="stack" style="max-width:760px"><p class="lab">Start here</p><h2 id="b-h" class="serif" style="font-size:clamp(46px,7vw,104px);line-height:.98;letter-spacing:-.04em">Start with 90 minutes<span class="pt">.</span></h2><p style="font-size:20px;max-width:620px">One Strategy Session, Br 20,000. You leave with a clear next step, and the fee is credited if we work together within 30 days.</p></div>
+<div class="stack" style="gap:14px;align-items:flex-start"><a class="btn dark lg" href="book/">Book a Strategy Session</a><p>Or write to <a href="mailto:hi@adanefirde.com">hi@adanefirde.com</a></p></div>
+</div></div></section>
 </main>
-
-<footer>
-  <div class="tile t-state"><p>Photographs of people, stories and spaces, made in Ethiopia.</p><small>© 2026 Adane Firde</small></div>
-  <nav class="tile t-nav" aria-label="Footer"><ul>
-    <li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#rates">Rates</a></li><li><a href="#contact">Contact</a></li>
-  </ul></nav>
-  <div class="tile t-time">Addis Ababa, now<strong id="clock" class="tab">—</strong></div>
-  <div class="tile t-mail"><a href="mailto:hi@adanefirde.com">hi@adanefirde.com</a></div>
-  <div class="tile t-word" aria-hidden="true"><span>Adane Firde</span></div>
-  <a class="tile t-go" href="#contact"><span>Book a shoot</span>
-    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true"><path d="M14 50 50 14M22 14h28v28"/></svg></a>
-  <p class="credit">Placeholder frames, to be replaced with Adane's own photographs.</p>
-</footer>
-
+<footer class="ftr"><div class="wrap">
+<div class="ftr-g">
+<div class="stack" style="max-width:420px;gap:16px"><a class="wm" href="./" style="font-size:40px">adane firde<span class="pt">.</span></a><p>Communication strategy and creative direction. Addis Ababa, working everywhere.</p></div>
+<div style="display:flex;flex-wrap:wrap;gap:56px">
+<div class="ftr-c"><p class="lab" style="color:var(--sky)">Site</p><a href="services/">Services</a><a href="#work">Work</a><a href="about/">About</a><a href="book/">Book</a><a href="photography/">Photography</a></div>
+<div class="ftr-c"><p class="lab" style="color:var(--sky)">Write</p><a href="mailto:hi@adanefirde.com">hi@adanefirde.com</a></div>
+</div></div>
+<div class="ftr-b"><p>© 2026 Adane Firde</p><p>Addis Ababa, Ethiopia</p></div>
+</div></footer>
 <script>
-document.body.classList.remove('no-js');
-
-/* ===== EDIT HERE: your photos =====
-   Put your images in a folder called "photos" next to this file and change each src to "photos/your-file.jpg".
-   cat = portrait | documentary | brand     h = frame height in the sheet (px)  */
-const PHOTOS = [
-  {src:'photos/portrait-1.jpg',    cat:'portrait',    title:'Portrait, Bole',             h:300},
-  {src:'photos/documentary-1.jpg', cat:'documentary', title:'Field visit, Amhara',        h:200},
-  {src:'photos/brand-1.jpg',       cat:'brand',       title:'Coworking floor, Kazanchis', h:240},
-  {src:'photos/portrait-2.jpg',    cat:'portrait',    title:'Founder headshot',           h:260},
-  {src:'photos/documentary-2.jpg', cat:'documentary', title:'Highland road, Oromia',      h:220},
-  {src:'photos/documentary-3.jpg', cat:'documentary', title:'Morning, Entoto',            h:320},
-  {src:'photos/portrait-3.jpg',    cat:'portrait',    title:'Studio session',             h:240},
-  {src:'photos/brand-2.jpg',       cat:'brand',       title:'Rooftop, Piassa',            h:300},
-  {src:'photos/portrait-4.jpg',    cat:'portrait',    title:'Window-light portrait',      h:220},
-  {src:'photos/documentary-4.jpg', cat:'documentary', title:'Under One Tarp',             h:260},
-  {src:'photos/portrait-5.jpg',    cat:'portrait',    title:'Corporate headshot',         h:300},
-  {src:'photos/documentary-5.jpg', cat:'documentary', title:'Above the valley',           h:200},
-  {src:'photos/portrait-6.jpg',    cat:'portrait',    title:'Portrait, Sarbet',           h:260},
-  {src:'photos/brand-3.jpg',       cat:'brand',       title:'Hotel exterior',             h:230},
-  {src:'photos/brand-4.jpg',       cat:'brand',       title:'Product on location',        h:280},
-  {src:'photos/documentary-6.jpg', cat:'documentary', title:'Market morning, Merkato',    h:240},
-  {src:'photos/brand-5.jpg',       cat:'brand',       title:'Lounge, Bole',               h:220},
-  {src:'photos/brand-6.jpg',       cat:'brand',       title:'Team at work',               h:260},
-];
-const WORK = [ // Selected work ledger: replace with real projects
-  {name:'Under One Tarp',      kind:'Documentary, IRC Ethiopia', year:'2026', img:'photos/documentary-4.jpg'},
-  {name:'Bluespace Ethiopia',  kind:'Spaces and amenities',      year:'2026', img:'photos/brand-1.jpg'},
-  {name:'Corporate headshots', kind:'Portraits, banking',        year:'2026', img:'photos/portrait-5.jpg'},
-  {name:'Project name',        kind:'Brand, hospitality',        year:'2025', img:'photos/brand-3.jpg'},
-  {name:'Project name',        kind:'Documentary, NGO',          year:'2025', img:'photos/documentary-1.jpg'},
-  {name:'Project name',        kind:'Portraits, founders',       year:'2025', img:'photos/portrait-1.jpg'},
-  {name:'Project name',        kind:'Brand, product',            year:'2024', img:'photos/brand-4.jpg'},
-];
-const PORTRAIT = 'photos/me.jpg';
-/* ===== end of edit area ===== */
-
-const strips=['var(--s1)','var(--s2)','var(--s3)','var(--s4)'];
-const sz=src=>src;
-function frame(p,i,w=400,first=false){
-  const f=document.createElement('figure');f.className='frame';f.dataset.cat=p.cat;
-  f.innerHTML=`<div class="pic" style="height:${p.h}px"><img src="${sz(p.src,w,Math.round(p.h*w/240))}" alt="${p.title}" ${first?'':'loading="lazy"'}></div><figcaption aria-hidden="true" class="strip" style="background:${strips[i%4]}">${p.title}</figcaption>`;
-  return f;
-}
-const sheet=document.getElementById('top');
-const cols=[...document.querySelectorAll('#cols .col')];
-// distribute photos: wide column gets frames above/below panel
-const panel=document.querySelector('.panel');
-const order=[0,1,3,4]; let k=0;
-PHOTOS.forEach((p,i)=>{
-  const c=i%5;
-  if(c===2){ const wide=cols[2]; const f=frame(p,i,800); f.querySelector('.pic').style.height=(p.h*.8)+'px';
-    if(!wide.dataset.top){f.classList.add('nostrip');wide.insertBefore(f,panel);wide.dataset.top=1;} else wide.appendChild(f);}
-  else cols[[0,1,3,4][[0,1,3,4].indexOf(c)]].appendChild(frame(p,i,400,i===0));
-});
-// position the panel at ~28% height
-const topF=cols[2].querySelector('.frame .pic'); if(topF) topF.style.height=Math.max(80,innerHeight*.28-28-12+40)+'px';
-[0,1,3,4].forEach((c,j)=>{let n=0;while(cols[c].children.length<6){const p=PHOTOS[(c*3+n+j)%PHOTOS.length];cols[c].appendChild(frame(p,n+c));n++;}});
-cols[0].querySelector('.frame')?.classList.add('shutter');
-requestAnimationFrame(()=>{const sb=sheet.getBoundingClientRect().bottom;document.querySelectorAll('#cols .frame').forEach(f=>{const r=f.getBoundingClientRect();if(r.top>sb)f.remove();else if(r.bottom>sb-4){const st=f.querySelector('.strip');if(st)st.remove()}})});
-// phone sheet
-const m=document.querySelectorAll('.mobile-sheet .mcol');
-PHOTOS.slice(0,10).forEach((p,i)=>m[i%2].appendChild(frame({...p,h:Math.round(p.h*.7)},i,400)));
-
-// live thing: filter the sheet by kind
-document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
-  const on=b.getAttribute('aria-pressed')!=='true';
-  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed','false'));
-  sheet.classList.toggle('dim',on);
-  document.querySelectorAll('.sheet .frame').forEach(f=>f.classList.toggle('on',on&&f.dataset.cat===b.dataset.cat));
-  b.setAttribute('aria-pressed',on);
-}));
-
-// ledger
-const ul=document.getElementById('ledger'),pv=document.getElementById('preview'),pvi=document.getElementById('preview-img');
-let last=null;
-WORK.forEach((w,i)=>{
-  if(last&&last!==w.year){const g=document.createElement('li');g.className='year-gap';g.setAttribute('aria-hidden','true');ul.appendChild(g);}
-  last=w.year;
-  const li=document.createElement('li');li.tabIndex=0;
-  li.innerHTML=`${i<3?`<div class="mpic"><img src="${sz(w.img,800,500)}" alt="${w.name}" loading="lazy"></div>`:''}<span>${w.name}</span><span class="kind">${w.kind}</span><span class="tab">${w.year}</span>`;
-  const show=()=>{pvi.src=sz(w.img,600,450);pvi.alt=w.name;pv.style.top=(li.offsetTop+document.querySelector('.ledger').offsetTop)+'px';pv.classList.add('show');};
-  li.addEventListener('mouseenter',show);li.addEventListener('focus',show);
-  
-  ul.appendChild(li);
-});
-pvi.src=WORK[0].img;pvi.alt=WORK[0].name;pv.style.top=document.querySelector('.ledger').offsetTop+60+'px';
-document.getElementById('portrait').src=sz(PORTRAIT,320,320);
-document.querySelector('.portrait').classList.add('drift');
-
-// clock
-const clk=document.getElementById('clock');
-const tick=()=>clk.textContent=new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Africa/Addis_Ababa'}).format(new Date());
-tick();setInterval(tick,30000);
-
-// entrances
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
-document.querySelectorAll('.ledger li,.rates li,.lists li,.facts>div,.tile').forEach(el=>el.classList.add('rise'));
-document.querySelectorAll('.rise').forEach((el,i)=>{el.style.transitionDelay=(i%4*70)+'ms';io.observe(el);});
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');if(!b)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')})})();
 </script>
+
 </body>
 </html>
