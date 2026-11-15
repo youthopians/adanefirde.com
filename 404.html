@@ -4,39 +4,49 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found — Adane Firde</title>
-<meta name="description" content="Page not found.">
+<meta name="description" content="This page does not exist.">
+<meta name="theme-color" content="#FBF6EA">
 <meta property="og:title" content="Page not found — Adane Firde">
-<meta property="og:description" content="Page not found.">
+<meta property="og:description" content="This page does not exist.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#14213D">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="hdr"><div class="wrap">
+<header class="top">
 <a class="wm" href="/" aria-label="adane firde, home">adane firde<span class="pt">.</span></a>
-<button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><path d="M2 7 H20 M2 15 H14" stroke="#14213D" stroke-width="2.4" stroke-linecap="round"/><circle cx="19" cy="15" r="2" fill="#E0B03C"/></svg></button>
-<nav id="nav" class="nav" aria-label="Main"><a class="l" href="/services/">Services</a><a class="l" href="/#work">Work</a><a class="l" href="/about/">About</a><a class="btn pri" href="/book/">Book a session</a></nav>
-</div></header>
+<nav id="nav" aria-label="Main"><a href="/services/">Services</a><a href="/#work">Work</a><a href="/about/">About</a><a class="nb" href="/book/">Book a session</a></nav>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<a class="btn small act" href="/book/">Book a session</a>
+</header>
 <main id="main">
-<section class="hero"><div class="wrap stack"><p class="lab">404</p><h1 class="h1" style="font-size:clamp(54px,8vw,120px)">This page isn’t here<span class="pt">.</span></h1><p class="lead">Try the <a href="/">home page</a> or <a href="/services/">services and prices</a>.</p></div></section>
+<section class="hero sub" aria-labelledby="h1">
+<h1 id="h1"><span class="ln"><span>This page</span></span><span class="ln"><span>missed the point<span class="pt">.</span></span></span></h1>
+<div class="side"><p><strong>It doesn’t exist, or it moved.</strong> Try the home page, or start with the services and prices.</p>
+<div class="acts"><a class="btn" href="/">Go to the home page</a><a class="tlink" href="/services/">Services and prices</a></div></div>
+</section>
 </main>
-<footer class="ftr"><div class="wrap">
-<div class="ftr-g">
-<div class="stack" style="max-width:420px;gap:16px"><a class="wm" href="/" style="font-size:40px">adane firde<span class="pt">.</span></a><p>Communication strategy and creative direction. Addis Ababa, working everywhere.</p></div>
-<div style="display:flex;flex-wrap:wrap;gap:56px">
-<div class="ftr-c"><p class="lab" style="color:var(--sky)">Site</p><a href="/services/">Services</a><a href="/#work">Work</a><a href="/about/">About</a><a href="/book/">Book</a><a href="/photography/">Photography</a></div>
-<div class="ftr-c"><p class="lab" style="color:var(--sky)">Write</p><a href="mailto:hi@adanefirde.com">hi@adanefirde.com</a></div>
-</div></div>
-<div class="ftr-b"><p>© 2026 Adane Firde</p><p>Addis Ababa, Ethiopia</p></div>
-</div></footer>
-<script>
-(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');if(!b)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')})})();
-</script>
-
+<footer class="foot wrap">
+<p class="big" aria-hidden="true">adane firde<span class="pt">.</span></p>
+<div class="rowf">
+<ul class="places">
+<li><a href="mailto:hi@adanefirde.com">hi@adanefirde.com</a></li>
+<li><span>Addis Ababa, Ethiopia</span></li>
+<li><span>In person or online</span></li>
+</ul>
+<div class="links">
+<div><h3>Site</h3><ul><li><a href="/services/">Services and prices</a></li><li><a href="/#work">Work</a></li><li><a href="/about/">About</a></li><li><a href="/book/">Book a session</a></li></ul></div>
+<div><h3>Also</h3><ul><li><a href="/photography/">Photography</a></li><li><a href="https://youthopians.com" rel="noopener">Youthopians</a></li></ul></div>
+<div><h3>Hours</h3><ul><li>Monday to Friday</li><li>Addis Ababa time, UTC+3</li><li>Replies within a day</li></ul></div>
+</div>
+</div>
+<div class="legal"><span>© 2026 Adane Firde. Photographs of Addis Ababa and coffee: Unsplash contributors, Unsplash Licence.</span><a href="#main">Back to top</a></div>
+</footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
