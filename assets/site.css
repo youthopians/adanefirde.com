@@ -395,3 +395,16 @@ legend{padding:0;width:100%}
 .cn-repeat p{font-size:18px;line-height:1.5;max-width:90ch}
 @media (max-width:900px){.cn-kpis4{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.cn-repeat{flex-direction:column;gap:12px;padding:20px}.cn-repeat p{font-size:16px}.cn-kpis4{margin-top:32px}}
+/* portrait */
+.portrait{position:relative;margin:0 0 0 auto;width:100%;max-width:440px}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:24px;background:#111}
+.portrait .pseal{position:absolute;left:-30px;bottom:40px;width:116px;height:116px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 6px var(--cream);display:flex;align-items:center;justify-content:center;white-space:nowrap;font-family:var(--serif);font-weight:500;font-size:46px;letter-spacing:-.04em;color:var(--cream);line-height:1}
+.portrait-sm{flex:0 1 320px;margin:0;max-width:320px}
+.portrait-sm .pseal{width:88px;height:88px;font-size:34px;left:-22px;bottom:28px}
+@media (max-width:600px){
+ .hero-r:has(.portrait){order:0;flex:1 1 100%}
+ .portrait{max-width:100%;margin:8px 0 0}
+ .portrait img{border-radius:16px}
+ .portrait .pseal{width:76px;height:76px;font-size:30px;left:auto;right:16px;bottom:16px;box-shadow:0 0 0 4px var(--cream)}
+ .portrait-sm{max-width:240px}
+}
