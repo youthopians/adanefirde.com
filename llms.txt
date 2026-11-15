@@ -6,6 +6,7 @@
 
 - [Home](https://adanefirde.com/): what the practice does, how it works, selected clients and work
 - [Services](https://adanefirde.com/services/): Strategy Session; Sharpen track (Audit, Strategy, Content & Social System, Communication Blueprint); Build track (Brand Starter, Brand Foundation); Retainer
+- [Case note: FarmerChat](https://adanefirde.com/work/farmerchat/): making Digital Green's AI farm advisor understandable to Ethiopian farmers
 - [About](https://adanefirde.com/about/): background, beliefs, who the practice is for and who it isn't for
 - [Book](https://adanefirde.com/book/): request a Strategy Session
 - [Photography](https://adanefirde.com/photography/): portrait, documentary and brand photography
