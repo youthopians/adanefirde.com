@@ -386,3 +386,5 @@ legend{padding:0;width:100%}
  .cn-kpis span{font-size:13px}
  .navy .pattern{margin-top:40px}
 }
+.cn-h3{font-family:Fraunces,serif;font-weight:500;font-size:clamp(28px,2.6vw,40px);line-height:1.08;letter-spacing:-.02em}
+@media (max-width:600px){.cn-split[style*="margin-top:72px"]{margin-top:40px!important;gap:12px}}
