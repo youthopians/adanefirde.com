@@ -59,9 +59,10 @@ a:hover{color:#0B1326}
 .small{font-size:15px;color:var(--lab)}
 .seal{aspect-ratio:1/1;width:100%;max-width:480px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin-left:auto}
 .seal span{font-family:var(--serif);font-weight:500;font-size:clamp(90px,11vw,170px);letter-spacing:-.04em;color:var(--cream);line-height:1;transform:translateY(-4%)}
-.pattern{display:flex;align-items:center;gap:12px;overflow:hidden;margin-top:72px}
-.pattern i{display:block;flex:none;width:28px;height:4px;border-radius:2px;background:var(--navy)}
-.pattern b{display:block;flex:none;width:8px;height:8px;border-radius:4px;background:var(--mus)}
+.pattern{display:flex;flex-direction:column;gap:14px;overflow:hidden;margin-top:72px}
+.prow{display:flex;align-items:center;gap:10px;white-space:nowrap}
+.pattern i{display:block;flex:none;height:6px;border-radius:3px;background:var(--navy)}
+.pattern b{display:block;flex:none;width:10px;height:10px;border-radius:5px;background:var(--mus);margin:0 12px 0 -3px}
 /* clients */
 .clients{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:20px}
 .clients span{font-family:var(--serif);font-size:26px;color:var(--navy)}
